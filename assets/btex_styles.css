@@ -1,0 +1,35 @@
+.block {
+  padding: .8em 1.2em;
+  margin: 1em 0 1em 0;
+  background-color: #f4f6f8;
+  border-color: #c0c4c8;
+}
+
+.block.style-a {
+  background: convert(hexo-config("prop_color"));
+}
+
+.block.style-b {
+  background: convert(hexo-config("defn_color"));
+}
+
+.block.style-c {
+  background: convert(hexo-config("rmk_color"));
+}
+
+.floatright {
+  float: right;
+  margin: 0;
+}
+
+.list th, td {
+  border: none !important;
+}
+
+tr {
+  background: none!important;
+}
+
+td {
+  vertical-align: top;
+}
