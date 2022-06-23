@@ -10,13 +10,13 @@ hexo-btex 是一个基于 [btex](https://github.com/rqy1458814497/btex/tree/hexo
 下载 [btex](https://github.com/rqy1458814497/btex/tree/hexo-btex) 包及本包，
 将本包路径加入 Hexo 项目 `package.json` 的 `dependencies` 中，并移除 `hexo-generator-index`，形如
 ```json
-...
+  "BLAHBLAH": "BLAHBLAH",
   "dependencies": {
     "hexo": "^6.2.0",
     "hexo-renderer-btex": "file:PATH/TO/hexo-btex",
-    ...
+    "OTHER DEPENDENCIES": "BLAHBLAHBLAHBLAH",
   }
-...
+  "BLAHBLAH": "BLAHBLAH"
 ```
 并修改本包 `package.json` 的 `dependencies` 中 `btex` 的路径。
 （目前还很不完善，暂时不考虑发布到 npm。）
@@ -44,7 +44,7 @@ theme_config:
 若文章需要导言，可将导言存储为相同文件夹下的 `_preamble.tex` 文件。
 存储在 `xxx/yyy.tex` 的文件将会生成为 `/xxx/yyy/index.html`。
 
-`tex` 文件开头仍然可以有 Front-matter。其会被 `hexo` 识别并处理，不用担心被 `btex` 渲染。
+`tex` 文件开头仍然可以有 [Front-matter](https://hexo.io/zh-cn/docs/front-matter)。其会被 `hexo` 识别并处理，不用担心被 `btex` 渲染。
 
 可以使用 `% MORE` （必须写在行首）截断文章，使其前面的部分成为文章摘要展示在博客首页。
 
